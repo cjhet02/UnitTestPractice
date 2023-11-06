@@ -19,3 +19,17 @@ int Password::count_leading_characters(string phrase){
   }
   return repetition;
 }
+
+  /*
+  returns whether the phrase has both at least one upper-case letter and
+  at least one lower-case letter
+  */
+bool has_mixed_case(string pass){
+  for (int i = 0; i < pass.size(); i++){
+    if(pass[i] > 64 && pass[i] < 91){
+      return true;
+    }
+  }
+
+  return false;
+}
